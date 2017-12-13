@@ -324,7 +324,7 @@ if (window.location.hash === "") {
         if (!err) {
             console.log(res);
             var data = d3.nest().key(function(d) { return d.region; }).key(function(d) { return d.subregion; }).entries(res);
-            main({title: "Bevolkingsopbouw Nederland"}, {key: "Totaal", values: data});
+            main({title: "Bevolkingsopbouw werelddelen"}, {key: "Totaal", values: data});
         }
     });
 }
